@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индекс массы тела</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div class="heading">
+            <h1>Индекс массы тела</h1>
+        </div>
+        <h2>Лишний вес опасен для человеческого здоровья, поскольку часто приводят к сердечным заболеваниям.</h2>
+        <h3>Наш онлайн-калькулятор станет вашим помощником при расчете ИМТ</h3>
+        <form>
+            <p>Ваш возраст</p>
+            <input type="text" id="age" placeholder="Ваш возраст">
+            <p>Масса тела</p>
+            <span>
+                <input type="text" id="weight" placeholder="Введите Ваш вес"> кг.
+            </span>
+            <p>Рост</p>
+            <span>
+                <input type="text" id="height" placeholder="Введите Ваш рост"> м.
+            </span>
+            <button id="calculateBMI">Рассчитать</button>
+        </form>
+        <div id="block">
+            <div id="individualIndex">
+                <p>Ваш Индекс массы тела</p>
+                <span id="result"></span>
+            </div>
+            <div id="individualCondition">
+                <p>Состояние здоровья</p>
+                <span id="advice"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
